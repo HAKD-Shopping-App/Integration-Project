@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/product" name="productService" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/getProducts">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to the Product Service"/>
+            </log>
+            <send>
+                <endpoint key="getProduct"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/addToCart">
+        <inSequence>
+            <log>
+                <property name="Message" value="Add to Cart"/>
+            </log>
+            <send>
+                <endpoint key="addToCart"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/addStocks">
+        <inSequence>
+            <log>
+                <property name="Message" value="Add to Stocks"/>
+            </log>
+            <send>
+                <endpoint key="addStocks"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/addProducts">
+        <inSequence>
+            <log>
+                <property name="Message" value="Add new products"/>
+            </log>
+            <send>
+                <endpoint key="addProduct"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" url-mapping="/updateProduct">
+        <inSequence>
+            <log>
+                <property name="Message" value="Update to Product"/>
+            </log>
+            <send>
+                <endpoint key="updateProduct"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="DELETE" url-mapping="deleteProducts">
+        <inSequence>
+            <log>
+                <property name="Message" value="Delete product "/>
+            </log>
+            <send>
+                <endpoint key="deleteProduct"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/searchByCategory">
+        <inSequence>
+            <log>
+                <property name="Message" value="Search Product"/>
+            </log>
+            <send>
+                <endpoint key="searchProduct"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

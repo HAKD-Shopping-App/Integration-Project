@@ -1,0 +1,11 @@
+---
+key: "supplierService-1.0.0"
+name : "supplierService"
+displayName : "supplierService"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/supplier"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

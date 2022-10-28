@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/supplier" name="supplierService" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/getSuppliers">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to the Supplier Service"/>
+            </log>
+            <send>
+                <endpoint key="getSuppliers"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/signUp">
+        <inSequence>
+            <log>
+                <property name="Message" value="Sellers - Sign In"/>
+            </log>
+            <send>
+                <endpoint key="signUp"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/signIn">
+        <inSequence>
+            <log>
+                <property name="Message" value="Supplier-Sign In"/>
+            </log>
+            <send>
+                <endpoint key="signIn"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

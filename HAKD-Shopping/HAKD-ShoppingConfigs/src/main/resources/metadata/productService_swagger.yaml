@@ -1,0 +1,83 @@
+openapi: 3.0.1
+info:
+  title: productService
+  description: API Definition of productService
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/product
+paths:
+  /getProducts:
+    get:
+      responses:
+        default:
+          description: Default response
+  /addToCart:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /addStocks:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /addProducts:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /updateProduct:
+    put:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  deleteProducts:
+    delete:
+      responses:
+        default:
+          description: Default response
+  /searchByCategory:
+    get:
+      responses:
+        default:
+          description: Default response

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2e.Maven2LaunchConfigurationType">
+    <stringAttribute key="M2_GOALS" value="test -DtestServerType=local -DtestServerPort=9008 -DtestServerPath=&quot;C:\Users\Acer\Desktop\IntegrationStudio\runtime\microesb\bin\micro-integrator.bat&quot; -DtestFile=ApiTestSuite.xml"/>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="JAVA_HOME" value="C:\Users\Acer\Desktop\IntegrationStudio\jdk-home"/>
+    </mapAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:/TestConfigs}"/>
+</launchConfiguration>
